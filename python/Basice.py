@@ -10,7 +10,7 @@ from random import random
 
 class BasicAlgo():
     """
-    Python Basic Logis
+    Python Basic Logis and Methods
     =======================
 
     this is basic Logis class
@@ -188,6 +188,36 @@ class BasicAlgo():
             if sum_Num == com_Number:
                 temList.append(sum_Num)
         return temList, count
+    # Python Program to Find the Sum of Natural Numbers
+
+    def naturalNumbers(self, number=None):
+        userNumber = int(input('Enter lastNumber -> ')
+                         ) if number == None else number
+        # ==> see the full understating video https://www.youtube.com/watch?v=aaFrAFZATKU&t=115s
+        return (userNumber*(userNumber+1))/2
+
+    def power(self, arr=None):
+        userArr = [1, 2, 3, 4, 5, 6, 7, 8, 9] if arr == None else arr
+        return list(map(lambda x: x**2, userArr))
+
+    # Python Program to Find Numbers Divisible by Another Number
+    def numberDivisible(self, arr=None, divisibleNumber=None):
+        # if function don't have paramiter
+        userArr = [1, 2, 3, 4, 5, 6, 7, 8, 9] if arr == None else arr
+        userDivisible = int(input('Enter number to divisible -> ')
+                            ) if divisibleNumber == None else divisibleNumber
+        return list(filter(lambda x: x % userDivisible == 0, userArr))
+
+    # Python Program to Convert Decimal to Computer understand numbers -> (binary. Binary, octal and hexadecimal)
+    def DecimalToCompUnderd(self, number=None):
+        userNumber = int(input('Enter lastNumber -> ')
+                         ) if number == None else number
+        return (f'Your Decimal Number is {userNumber} Convert to \n\nBinary \t\t=> {bin(userNumber)}\nOctal \t\t=> {oct(userNumber)}\nHexadecimal \t=> {hex(userNumber)}')
+
+    # Python Program to Find ASCII Value of Character
+    def findAsccii(self, character=None):
+        userCharacter = input('Enter Character -> ')
+        return (f'Your Character is {userCharacter} and it\'s ASCII is {ord(userCharacter)} ')
 
 
 algo = BasicAlgo()
@@ -211,7 +241,12 @@ try:
     # algo.multiplicationTable()
     # print('output -> ', algo.fibonacciSequence())
     # print('Output -> ', algo.checkArmstrongNumber())
-    print('Output -> ', algo.findAllArmstrongNumber(100, 2000))
+    # print('Output -> ', algo.findAllArmstrongNumber(100, 2000))
+    # print('Output -> ', algo.naturalNumbers())
+    # print('Output -> ', algo.power())
+    # print('Output -> ', algo.numberDivisible())
+    # print('Output -> ', algo.DecimalToCompUnderd())
+    print('Output -> ', algo.findAsccii())
 
 
 # except:
