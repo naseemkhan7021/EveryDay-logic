@@ -1,0 +1,20 @@
+{
+  "name": "onlypractice",
+  "version": "1.0.0",
+  "description": "'for only practice file'",
+  "main": "app-0.js",
+  "scripts": {
+    "start": "nodemon app-0.js",
+    "test": "nodemon testing.js"
+  },
+  "author": "naseem",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.0"
+  }
+}
