@@ -101,5 +101,85 @@ print("i am a \\n this is ")  # output --> i am a \n this is
 
 # -------------------------------------
 # count latter more then 2
-s = 'naseem'
-t = 'salman'
+# s = 'naseem'
+# t = 'salman'
+
+# def primeRange(M, N):
+#     # code here
+#     prime = []
+#     while M < N:
+#         if M > 1:
+#             for item in range(2, M):
+#                 if (M % item) == 0:
+#                     break
+#                 else:
+#                     prime.append(M)
+#         M += 1
+#     return prime
+
+
+# print(primeRange(1, 10))
+
+
+# def primeRange(M, N):
+#     # code here
+#     prime = []
+#     for num in range(M, N + 1):
+#         # all prime numbers are greater than 1
+#         if num > 1:
+#             for i in range(2, num):
+#                 if (num % i) == 0:
+#                     break
+#             else:
+#                 prime.append(num)
+#     return prime
+
+
+# 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+
+# def isPrime(n):
+#     #     print(n)
+#     this = False
+#     if n == 2:
+#         return True
+#     if n <= 1 or n % 2 == 0:
+#         return False
+#     for item in range(2, n):
+#         if n % item == 0:
+#             this = False
+#             break
+#         else:
+#             this = True
+#     return this
+
+
+# def primeRange(M, N):
+#     # code here
+#     #     prime = []
+#     #     for num in range(M, N + 1):
+#     #         if isPrime(num):
+#     #             prime.append(num)
+#     return [num for num in range(M, N+1) if isPrime(num)]
+
+
+# print(primeRange(1, 16))
+# Using the Slice Operator
+def Cloning(li1):
+    li_copy = li1[:]
+    li_copy[0] = 1
+    print("After Cloning:", li_copy)
+
+
+# Driver Code
+li1 = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
+
+
+def name(li1):
+    for item in li1:
+        if type(item) == list:
+            Cloning(li1)
+
+
+name(li1)
+print("Original List:", li1)

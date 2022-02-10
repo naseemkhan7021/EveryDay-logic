@@ -236,7 +236,7 @@ try:
     # print('Output -> ', algo.largestNumberinArr())
     # print('Output -> ', algo.findPrimeNumbers())
     # print('Output -> ', range(2, math.floor(math.sqrt(10)+1)))
-    # print('Output -> ', algo.findAllPrimeNumberinRange(10))
+    print('Output -> ', algo.findAllPrimeNumberinRange(10))
     # print('Output -> ', algo.factorialNumber())
     # algo.multiplicationTable()
     # print('output -> ', algo.fibonacciSequence())
@@ -246,7 +246,7 @@ try:
     # print('Output -> ', algo.power())
     # print('Output -> ', algo.numberDivisible())
     # print('Output -> ', algo.DecimalToCompUnderd())
-    print('Output -> ', algo.findAsccii())
+    # print('Output -> ', algo.findAsccii())
 
 
 # except:
