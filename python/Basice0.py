@@ -1,5 +1,5 @@
+# all come releted to Programiz --> https://www.programiz.com/python-programming/examples
 # from sys import exc_info
-
 from cmath import log
 from functools import reduce
 from itertools import count
