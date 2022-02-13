@@ -219,6 +219,13 @@ class BasicAlgo():
         userCharacter = input('Enter Character -> ')
         return (f'Your Character is {userCharacter} and it\'s ASCII is {ord(userCharacter)} ')
 
+    # Python Program to Find HCF or GCD
+    def findLargestFector(self, number1, number2):
+        # GCF = b%a = 0
+        while number2:
+            number1, number2 = number2, number1 % number2
+        return number1
+
 
 algo = BasicAlgo()
 try:
@@ -236,7 +243,7 @@ try:
     # print('Output -> ', algo.largestNumberinArr())
     # print('Output -> ', algo.findPrimeNumbers())
     # print('Output -> ', range(2, math.floor(math.sqrt(10)+1)))
-    print('Output -> ', algo.findAllPrimeNumberinRange(10))
+    # print('Output -> ', algo.findAllPrimeNumberinRange(10))
     # print('Output -> ', algo.factorialNumber())
     # algo.multiplicationTable()
     # print('output -> ', algo.fibonacciSequence())
@@ -247,6 +254,7 @@ try:
     # print('Output -> ', algo.numberDivisible())
     # print('Output -> ', algo.DecimalToCompUnderd())
     # print('Output -> ', algo.findAsccii())
+    print('Output -> ', algo.findLargestFector(24, 54))
 
 
 # except:

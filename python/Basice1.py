@@ -68,7 +68,6 @@ print(sp_count)
 '''
 
 
-'''
 # Pair Sum
 # https://www.codingninjas.com/codestudio/problems/pair-sum_697295
 # arr = [1, 2, 3, 4, 5]
@@ -91,17 +90,17 @@ def pairSum(arr, s):
 
 
 print(pairSum(arr, find))
-'''
+
 
 # Maximum Subarray Sum
 # arr = [1, 2, 7, -4, 3, 2, -10, 9, 1]
 # arr = [10, 20, -30, 40, -50, 60]
 # arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 # arr = [-13, -3, -25, -20, -3, -16, -23, -12, -5, -22, -15, -4, -7]
-arr = [-2, -3, 4, -1, -2, 1, 5, -3]
+# arr = [-2, -3, 4, -1, -2, 1, 5, -3]
 # arr = [-2, -1]
 # arr = [5, 4, -1, 7, 8]
-length = len(arr)
+# length = len(arr)
 '''
 all_Sum == a+arr[i]
 b == arr[i]
@@ -124,7 +123,7 @@ def maxSubarraySum(arr, n):
     return max_Sum
 '''
 
-
+'''
 def maxSubarraySum(arr, n):
     max_Sum = 0
     all_Sum = 0
@@ -140,3 +139,4 @@ def maxSubarraySum(arr, n):
 
 
 print(maxSubarraySum(arr, length))
+'''
