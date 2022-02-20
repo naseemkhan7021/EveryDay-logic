@@ -142,5 +142,18 @@ def maxSubarraySum(arr, n):
 print(maxSubarraySum(arr, length))
 '''
 
-print("{:.6f}". format(0/6), end='\n')
-print("{:.6f}". format(0/6),)
+# print("{:.6f}". format(0/6), end='\n')
+# print("{:.6f}". format(0/6),)
+
+
+def isPalindrome(x: int) -> bool:
+    s = 0
+    tem = x
+    while x > 0:
+        r = x % 10
+        s = (s*10)+r
+        x //= 10
+    print(tem, s, x)
+
+
+isPalindrome(121)
