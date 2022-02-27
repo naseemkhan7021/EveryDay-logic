@@ -237,7 +237,7 @@ try:
     # print('oddNumber is -> ', algo.oddNumber())
     # print('oddNumber is -> ', algo.evenNumber(3, 6))
     # print('Area of triangle -> ', algo.AreaOfTriangle(6, 12))
-    print('Swap Two value -> ', algo.swapTwoValue(5, 2))
+    # print('Swap Two value -> ', algo.swapTwoValue(5, 2))
     # print('Random Number -> ', algo.ganarateRandomNumber())
     # print('conver kilometre to mile -> ', algo.converkiloMtoMile(2))
     # print('celsium_to_fahrenheit -> ', algo.celsiumToFahrenheit(2))
@@ -257,7 +257,7 @@ try:
     # print('Output -> ', algo.numberDivisible())
     # print('Output -> ', algo.DecimalToCompUnderd())
     # print('Output -> ', algo.findAsccii())
-    # print('Output -> ', algo.findLargestFector(24, 54))
+    print('Output -> ', algo.findLargestFector(24, 54))
 
 
 # except:
